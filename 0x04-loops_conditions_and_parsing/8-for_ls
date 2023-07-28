@@ -1,0 +1,11 @@
+#!/usr/bin/env bash
+# Script shows content of the current directory
+# In list format, without hidden files
+# Must use a for loop
+
+list=$(ls)
+
+for k in $list
+do
+	echo "$k" | cut -d '-' -f2
+done
