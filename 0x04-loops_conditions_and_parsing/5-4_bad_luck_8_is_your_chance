@@ -1,0 +1,22 @@
+#!/usr/bin/env bash
+# This script loops from 1 - 10
+# Displays "bad luck" for 4th loop iteration
+# Displays "good luck" for 8th loop iteration
+# Displays "Best School" for the rest
+# Must use while loop, if, elif and else statements
+
+k=0
+
+while [ $k -lt 10 ]
+do
+	if [ $k -eq 3 ]
+	then
+		echo "bad luck"
+	elif [ $k -eq 7 ]
+	then
+		echo "good luck"
+	else
+		echo "Best School"
+	fi
+	((k++))
+done
