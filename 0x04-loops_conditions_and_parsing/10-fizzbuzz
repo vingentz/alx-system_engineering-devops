@@ -1,0 +1,22 @@
+#!/usr/bin/env bash
+# Script shows numbers from 1 to 100
+# Shows "FizzBuzz" if number is a mutiple of 3 and 5
+# Shows "Fizz" if number is a mutiple of 3
+# Shows "Buzz" if number is a mutiple of 5
+# Else display numbers using list format
+
+for k in {1..100}
+do
+	if ((k % 3 == 0 && k % 5 == 0))
+	then
+		echo "FizzBuzz"
+	elif ((k % 3 == 0))
+	then
+		echo "Fizz"
+	elif ((k % 5 == 0))
+	then
+		echo "Buzz"
+	else
+		echo "$k"
+	fi
+done
