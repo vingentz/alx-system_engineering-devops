@@ -1,0 +1,7 @@
+#!/usr/bin/env bash
+# Sort log for IP and HTTP
+# Put occurence Number first then HTTP Code
+# Order from greatest to least
+
+fle="apache-access.log"
+awk '{print $1, $9}' $fle | sort | uniq -c | sort -nr
